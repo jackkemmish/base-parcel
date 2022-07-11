@@ -1,0 +1,31 @@
+@import './vars';
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+body {
+	background-color: $c-black;
+	color: $c-white;
+	margin: 0;
+	padding: 0;
+
+	// sticky footer
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+main {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
